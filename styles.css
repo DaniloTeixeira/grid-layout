@@ -1,0 +1,63 @@
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+}
+.container {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 4fr 1fr 2fr 2fr;
+  grid-template-rows: 20vh 30vh 30vh 20vh;
+  grid-template-areas:
+    'h h h h h'
+    's ar ar s1 as'
+    's ar ar s2 as'
+    'f f f f f';
+}
+
+.header {
+  margin-top: 35px;
+  background-color: orange;
+  height: 16vh;
+  grid-area: h;
+}
+
+.sidenav {
+  background-color: green;
+  height: 48vh;
+  grid-area: s;
+}
+
+.article {
+  background-color: blue;
+  height: 48vh;
+  grid-area: ar;
+}
+
+.section1 {
+  background-color: purple;
+  height: 23vh;
+  grid-area: s1;
+}
+
+.section2 {
+  margin-top: -7vh;
+  background-color: brown;
+  height: 24vh;
+  grid-area: s2;
+}
+
+.aside {
+  background-color: red;
+  height: 48.4vh;
+  gris-area: as;
+}
+
+.footer {
+  margin-top: -13vh;
+  height: 15vh;
+  background-color: gray;
+  grid-area: f;
+}
